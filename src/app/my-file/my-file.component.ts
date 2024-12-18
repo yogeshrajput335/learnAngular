@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-    selector: 'my-mgr',
+    selector:"my-file",
     template: `
     <div style="color:red; background-color:black">This is my class</div><br>
 
@@ -14,15 +14,11 @@ import { Component } from '@angular/core';
 
     <h1 style="color:black; background-color:yellow; text-align:center; text-decoration-line: overline underline;">
       TYPE SCRIPT
-    </h1>
-    
-  `
+    </h1>`
+
 })
-
-export class MymgrComponent {
-
-    angularjs() {
-        alert('AngularJS Button Clicked!');
-    }
-
+ export class MyFileComponent{
+angularjs(){
+alert("hello");
+ }
 }
