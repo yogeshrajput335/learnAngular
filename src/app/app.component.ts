@@ -4,9 +4,10 @@ import { MyHeadComponent } from './my-head/my-head.component';
 import { MyBodyComponent } from './my-body/my-body.component';
 import { MymgrComponent } from './my-mgr/my-mgr.component';
 import { MyFootComponent } from './my-foot/my-foot.component';
+import { OneWayComponent } from './component/one.component';
 @Component({
   selector: 'app-root',
-  imports: [MyHeadComponent, MyBodyComponent, MymgrComponent, MyFootComponent],
+  imports: [MyHeadComponent, MyBodyComponent, MymgrComponent, MyFootComponent, OneWayComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
