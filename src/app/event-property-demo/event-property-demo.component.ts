@@ -13,6 +13,5 @@ export class EventPropertyDemoComponent {
  
  showMessge(data:string){
   alert("Hello: "+data)
-  //console.log("Event is triggered :"+ data);
  }
 }
