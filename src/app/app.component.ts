@@ -14,4 +14,11 @@ import { MyFileComponent } from './my-file/my-file.component';
 })
 export class AppComponent {
   title = 'my-app';
+  a = "Special Input Text";
+  trainingName="Devops Training";
+  text="Text from parent"
+
+  getData(val:string){
+    this.text = val;
+  }
 }
