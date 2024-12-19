@@ -1,0 +1,5 @@
+{{testVariable}}
+
+<input type="text" #inp1 [value]="testVariable" (click)="showMessge(inp1.value)"/>
+<input type="text" [(ngModel)]="twoWay"/>
+{{twoWay}}
