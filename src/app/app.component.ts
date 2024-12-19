@@ -8,17 +8,17 @@ import { MyFootComponent } from './my-foot/my-foot.component';
 import { MyFileComponent } from './my-file/my-file.component';
 @Component({
   selector: 'app-root',
-  imports: [MyHeadComponent, MyBodyComponent, MymgrComponent,MyBodyLokaComponent,MyFootComponent,MyFileComponent],
+  imports: [MyHeadComponent, MyBodyComponent, MymgrComponent, MyFootComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'my-app';
   a = "Special Input Text";
-  trainingName="Devops Training";
-  text="Text from parent"
+  trainingName = "Devops Training";
+  text = "Text from parent"
 
-  getData(val:string){
+  getData(val: string) {
     this.text = val;
   }
 }
