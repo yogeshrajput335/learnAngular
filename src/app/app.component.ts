@@ -10,7 +10,7 @@ import { EventPropertyDemoComponent } from './event-property-demo/event-property
 import { MyLaptopComponent } from './my-laptop/my-laptop.component';
 @Component({
   selector: 'app-root',
-  imports: [MyHeadComponent, EventPropertyDemoComponent,MyBodyComponent, MymgrComponent,MyBodyLokaComponent,MyFootComponent,MyFileComponent,MyLaptopComponent],
+  imports: [MyHeadComponent,MyBodyComponent, EventPropertyDemoComponent,MyBodyComponent, MymgrComponent,MyBodyLokaComponent,MyFootComponent,MyFileComponent,MyLaptopComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
