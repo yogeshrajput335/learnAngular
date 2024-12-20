@@ -1,0 +1,33 @@
+<h1 style="color:blueviolet;">My House </h1>
+<button (click)="ChangeHand()">My Hall</button>
+<button (click)="WorldHas()">My sweet home</button>
+
+<div *ngIf="isHand">Land</div>
+
+<ul>
+    <li *ngFor="let f of list">{{f}}</li>
+
+</ul>
+<div [ngClass]="{'my-hand': hasMyHand, 'another-hand': true}">
+    NG CLASS
+</div>
+
+<div [ngStyle]="{'color': myLight}">
+    NG STYLE
+</div>
+<input [(ngModel)]="name">
+<div *ngIf="isHand">Land</div>
+
+<ul>
+    <li *ngFor="let f of list">{{f}}</li>
+
+</ul>
+<div [ngClass]="{'my-hand': havingR, 'another-hand': true}">
+    NG CLASS
+</div>
+
+<div [ngStyle]="{'color': myOne}">
+    NG STYLE
+</div>
+
+<input [(ngModel)]="name1">
