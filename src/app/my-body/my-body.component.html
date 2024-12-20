@@ -1,2 +1,23 @@
 <h1 style="color: blueviolet;">My Body</h1>
-    <test-details></test-details>
+<button (click)="ChangeShow()">Toggle</button>
+<div *ngIf="isShow">Demo Data</div> 
+
+<ul>
+    <li *ngFor="let f of list">{{f}}</li>
+</ul>
+<div class="my-class another-class">
+    NORMAL CLASS 
+</div>
+   <div [ngClass]="{'my-class': hasMyClass, 'another-class': true}">
+     NG CLASS
+   </div>
+
+   <div [ngStyle]="{'color': myColor}">
+    NG STYLE
+  </div>
+
+  <div style="color:red">
+    NORMAL STYLE
+  </div>
+
+  <input [(ngModel)]="name" >
