@@ -8,19 +8,29 @@ import { MyFootComponent } from './my-foot/my-foot.component';
 import { MyFileComponent } from './my-file/my-file.component';
 import { EventPropertyDemoComponent } from './event-property-demo/event-property-demo.component';
 import { MyLaptopComponent } from './my-laptop/my-laptop.component';
+import { OneWayComponent } from './component/one.component';
 @Component({
   selector: 'app-root',
-  imports: [MyHeadComponent,MyBodyComponent, EventPropertyDemoComponent,MyBodyComponent, MymgrComponent,MyBodyLokaComponent,MyFootComponent,MyFileComponent,MyLaptopComponent],
+  imports: [MyHeadComponent, MyBodyComponent, EventPropertyDemoComponent, MyBodyComponent, MymgrComponent, MyBodyLokaComponent, MyFootComponent, MyFileComponent, MyLaptopComponent, OneWayComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'my-app';
-  a = "Special Input Text";
-  trainingName = "Devops Training";
-  text = "Text from parent"
 
-  getData(val: string) {
-    this.text = val;
-  }
+  title = 'my-app';
+  // a = "Special Input Text";
+  // trainingName = "Devops Training";
+  // text = "Text from parent"
+
+  // getData(val: string) {
+  //   this.text = val;
+  // }
+
+
+  oneItem = "this is one way";
+
+  // twoItems = ['apple'];
+
+  // newItem(twoItem: string) {
+  //   this.twoItems.push(twitem)
 }
