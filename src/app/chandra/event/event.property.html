@@ -1,0 +1,7 @@
+<div>
+    <p>Input something in the input box:</p>
+    <p>Name: <input type="text" [(ngModel)]="name"></p>
+    <h1>Hello {{ name }}! Your age is {{ number }}</h1>
+    <h2>Age: <input type="number" [(ngModel)]="number"></h2>
+    <input type="text" [value]="message" (click)="showMessage(message)" />
+</div>

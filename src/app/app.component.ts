@@ -8,29 +8,32 @@ import { MyFootComponent } from './my-foot/my-foot.component';
 import { MyFileComponent } from './my-file/my-file.component';
 import { EventPropertyDemoComponent } from './event-property-demo/event-property-demo.component';
 import { MyLaptopComponent } from './my-laptop/my-laptop.component';
-import { OneWayComponent } from './component/one.component';
+import { OneWayComponent } from './chandra/one/one.component';
+import { TwoWayComponent } from './chandra/component/second/two.component';
+import { BuiltDirComponent } from './chandra/Structural/built_dir';
 @Component({
   selector: 'app-root',
-  imports: [MyHeadComponent, MyBodyComponent, EventPropertyDemoComponent, MyBodyComponent, MymgrComponent, MyBodyLokaComponent, MyFootComponent, MyFileComponent, MyLaptopComponent, OneWayComponent],
+  imports: [TwoWayComponent, MyHeadComponent, MyBodyComponent, EventPropertyDemoComponent, MyBodyComponent, MymgrComponent, MyBodyLokaComponent, MyFootComponent, MyFileComponent, MyLaptopComponent, OneWayComponent, BuiltDirComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
 
   title = 'my-app';
-  // a = "Special Input Text";
-  // trainingName = "Devops Training";
-  // text = "Text from parent"
+  a = "Special Input Text";
+  trainingName = "Devops Training";
+  text = "Text from parent"
 
-  // getData(val: string) {
-  //   this.text = val;
-  // }
+  getData(val: string) {
+    this.text = val;
+  }
+
 
 
   oneItem = "this is one way";
 
-  // twoItems = ['apple'];
-
-  // newItem(twoItem: string) {
-  //   this.twoItems.push(twitem)
+  js = "parent class";
+  onenewItem(val: string) {
+    this.js = val;
+  }
 }

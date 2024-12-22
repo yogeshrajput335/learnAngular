@@ -1,0 +1,24 @@
+<h1 style="color:blanchedalmond;">web page</h1>
+<ol>
+    <li *ngFor="let f of list">{{f}}</li>
+</ol>
+<button (click)="ChangeColor()">Toggle</button>
+<div *ngIf="isShow">added</div>
+
+
+<div class="my-class another-class">
+    NORMAL CLASS
+</div>
+<div [ngClass]="{'my-class': hasMyClass, 'another-class': true}">
+    NG CLASS
+</div>
+
+<div [ngStyle]="{'color': myColor}">
+    NG STYLE
+</div>
+
+<div style="color:rgb(68, 12, 210)">
+    NORMAL STYLE
+</div>
+
+<input [(ngModel)]="show">
