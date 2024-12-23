@@ -9,9 +9,10 @@ import { MyFileComponent } from './my-file/my-file.component';
 import { EventPropertyDemoComponent } from './event-property-demo/event-property-demo.component';
 import { MyLaptopComponent } from './my-laptop/my-laptop.component';
 import { oneWayBinding } from './oneway/oneway.component';
+import { TwoWayComponent } from './twoway/twoway.component';
 @Component({
   selector: 'app-root',
-  imports: [MyHeadComponent,oneWayBinding, EventPropertyDemoComponent,MyBodyComponent, MymgrComponent,MyBodyLokaComponent,MyFootComponent,MyFileComponent,MyLaptopComponent],
+  imports: [MyHeadComponent,oneWayBinding,TwoWayComponent,EventPropertyDemoComponent,MyBodyComponent, MymgrComponent,MyBodyLokaComponent,MyFootComponent,MyFileComponent,MyLaptopComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -24,9 +25,12 @@ export class AppComponent {
   getData(val: string) {
     this.text = val;
   }
+oneItem="hello one way binding";
 
 
+binding="parent class"
+twoBinding(vai1: string){
+  this.binding=vai1;
+}
 
-
-    oneItem="hello one way binding";
   }
