@@ -3,14 +3,16 @@ import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 
 @Component({
-    selector: 'bulid_dir',
+    selector: 'built_dir',
     templateUrl: './built_dir.html',
+
     imports: [CommonModule, FormsModule],
     styleUrl: './built_dir.css'
 })
+
 export class BuiltDirComponent {
     list = ['Bullet', 'Fz', 'Tvs', 'R15']
-    show = "text"
+    show = "AMOUNT"
     isShow = false;
     hasMyClass = true;
 

@@ -1,20 +1,23 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppComponent } from './app.component';
-import { EventTwowayComponent } from './event.property.component';
+import { EventTwowayComponent } from './event.property';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    EventTwowayComponent,
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-})
-export class AppModule { }
+describe('EventPropertyDemoComponent', () => {
+  let component: EventTwowayComponent;
+  let fixture: ComponentFixture<EventTwowayComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [EventTwowayComponent]
+    })
+      .compileComponents();
+
+    fixture = TestBed.createComponent(EventTwowayComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

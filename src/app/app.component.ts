@@ -9,11 +9,12 @@ import { MyFileComponent } from './my-file/my-file.component';
 import { EventPropertyDemoComponent } from './event-property-demo/event-property-demo.component';
 import { MyLaptopComponent } from './my-laptop/my-laptop.component';
 import { OneWayComponent } from './chandra/one/one.component';
-import { TwoWayComponent } from './chandra/component/second/two.component';
+import { TwoWayComponent } from './chandra/second/two.component';
 import { BuiltDirComponent } from './chandra/Structural/built_dir';
+import { EventTwowayComponent } from './chandra/event/event.property';
 @Component({
   selector: 'app-root',
-  imports: [TwoWayComponent, MyHeadComponent, MyBodyComponent, EventPropertyDemoComponent, MyBodyComponent, MymgrComponent, MyBodyLokaComponent, MyFootComponent, MyFileComponent, MyLaptopComponent, OneWayComponent, BuiltDirComponent],
+  imports: [TwoWayComponent, MyHeadComponent, MyBodyComponent, EventPropertyDemoComponent, MyBodyComponent, MymgrComponent, MyBodyLokaComponent, MyFootComponent, MyFileComponent, MyLaptopComponent, OneWayComponent, BuiltDirComponent, EventTwowayComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -36,4 +37,8 @@ export class AppComponent {
   onenewItem(val: string) {
     this.js = val;
   }
+
+
+  textMesg = "event-property";
+  testT = "this is a class";
 }

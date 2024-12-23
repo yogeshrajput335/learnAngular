@@ -1,24 +1,25 @@
-<h1 style="color:blanchedalmond;">web page</h1>
+<h1 style="color:rgb(245, 150, 6);">web page</h1>
 <ol>
     <li *ngFor="let f of list">{{f}}</li>
 </ol>
-<button (click)="ChangeColor()">Toggle</button>
-<div *ngIf="isShow">added</div>
+<button (click)="ChangeColor()">Bike rent</button>
+<div *ngIf="isShow">CHANGE Bike</div>
 
 
 <div class="my-class another-class">
-    NORMAL CLASS
+    single seater
 </div>
+
 <div [ngClass]="{'my-class': hasMyClass, 'another-class': true}">
-    NG CLASS
+    speed limit
 </div>
 
 <div [ngStyle]="{'color': myColor}">
-    NG STYLE
+    Model
 </div>
 
 <div style="color:rgb(68, 12, 210)">
-    NORMAL STYLE
+    bike:CC
 </div>
 
 <input [(ngModel)]="show">
