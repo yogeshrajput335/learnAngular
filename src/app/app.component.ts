@@ -8,9 +8,10 @@ import { MyFootComponent } from './my-foot/my-foot.component';
 import { MyFileComponent } from './my-file/my-file.component';
 import { EventPropertyDemoComponent } from './event-property-demo/event-property-demo.component';
 import { MyLaptopComponent } from './my-laptop/my-laptop.component';
+import { MyHandComponent } from './my-hand/my-hand.component';
 @Component({
   selector: 'app-root',
-  imports: [MyHeadComponent,MyBodyComponent, EventPropertyDemoComponent,MyBodyComponent, MymgrComponent,MyBodyLokaComponent,MyFootComponent,MyFileComponent,MyLaptopComponent],
+  imports: [MyHeadComponent,MyBodyComponent,MyHandComponent, EventPropertyDemoComponent,MyBodyComponent, MymgrComponent,MyBodyLokaComponent,MyFootComponent,MyFileComponent,MyLaptopComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
