@@ -1,9 +1,11 @@
 import { Routes } from '@angular/router';
-import { RoutelinkComponent } from './routelink/routelink.component';
+import { MyBodyComponent } from './my-body/my-body.component';
+import { MyBodyLokaComponent } from './my_bodyLoka/my_body_loka_component';
+import { MyHandComponent } from './my-hand/my-hand.component';
 import { MyHeadComponent } from './my-head/my-head.component';
 
 export const routes: Routes = [
-    {path:"routelink", component:RoutelinkComponent},
-    {path:"head",component:MyHeadComponent}
+    { path : "change", component : MyHandComponent},
+    { path : "old", component : MyHeadComponent}
 ];
-
+ 
