@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MyHeadComponent } from './my-head/my-head.component';
 import { MyBodyComponent } from './my-body/my-body.component';
 import { MymgrComponent } from './my-mgr/my-mgr.component';
@@ -11,7 +11,7 @@ import { MyLaptopComponent } from './my-laptop/my-laptop.component';
 import { MyHandComponent } from './my-hand/my-hand.component';
 @Component({
   selector: 'app-root',
-  imports: [MyHeadComponent,MyBodyComponent, EventPropertyDemoComponent,MyBodyComponent, MymgrComponent,MyBodyLokaComponent,MyFootComponent,MyFileComponent,MyLaptopComponent,MyHandComponent],
+  imports: [RouterOutlet,RouterLink,RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
