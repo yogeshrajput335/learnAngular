@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ApiConsume } from './chandra/api/apiconsume.component';
+import { ConsumeApiComponent } from './consume-api.component';
 
-describe('ApiConsume', () => {
-  let component: ApiConsume;
-  let fixture: ComponentFixture<ApiConsume>;
+describe('ConsumeAPIComponent', () => {
+  let component: ConsumeApiComponent;
+  let fixture: ComponentFixture<ConsumeApiComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ApiConsume]
+      imports: [ConsumeApiComponent]
     })
       .compileComponents();
 
-    fixture = TestBed.createComponent(ApiConsume);
+    fixture = TestBed.createComponent(ConsumeApiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

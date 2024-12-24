@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+// import { ApiConsume } from './chandra/api/apiconsume.component';
 // import { MyHeadComponent } from './my-head/my-head.component';
 // import { MyBodyComponent } from './my-body/my-body.component';
 // import { MymgrComponent } from './my-mgr/my-mgr.component';
