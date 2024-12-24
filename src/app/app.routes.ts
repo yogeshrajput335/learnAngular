@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
-import { MyBodyComponent } from './my-body/my-body.component';
-import { MyBodyLokaComponent } from './my_bodyLoka/my_body_loka_component';
 import { MyHandComponent } from './my-hand/my-hand.component';
 import { MyHeadComponent } from './my-head/my-head.component';
+import { AppapiconsumeComponent } from './appapiconsume/appapiconsume.component';
 
 export const routes: Routes = [
     { path : "change", component : MyHandComponent},
-    { path : "old", component : MyHeadComponent}
+    { path : "old", component : MyHeadComponent},
+    { path : "new", component : AppapiconsumeComponent }
 ];
  

@@ -1,0 +1,13 @@
+<p>appapiconsume works!</p>
+<button (click)="all()">open</button>
+<table>
+    <tr *ngFor="let w of WebData">
+        <td style="border: 1px black solid;">{{w.albumId}}</td>
+        <td style="border: 1px black solid;">{{w.id}}</td>
+        <td style="border: 1px black solid;">{{w.title}}</td>
+        <td style="border: 1px black solid;">{{w.url}}</td>
+        <td style="border: 1px black solid;">
+        <img [src]="w.thumbnailUrl"/></td>
+        
+    </tr>
+</table>
