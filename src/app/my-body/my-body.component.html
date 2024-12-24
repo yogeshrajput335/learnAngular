@@ -21,3 +21,7 @@
   </div>
 
   <input [(ngModel)]="name" >
+
+  {{pipeDemo | lowercase}}
+<br>
+  {{purchasedOn| date: "EEEE, MMMM d, y, h:mm:ss a zzzz"}} - {{purchasedOn}}

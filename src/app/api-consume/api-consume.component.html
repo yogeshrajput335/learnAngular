@@ -1,0 +1,13 @@
+
+<button (click)="GetData()">Get Data</button>
+<table>
+    <tr *ngFor="let w of WebData">
+        <td style="border: 1px black solid;">{{w.albumId}}</td>
+        <td style="border: 1px black solid;">{{w.id}}</td>
+        <td style="border: 1px black solid;">{{w.title |uppercase}}</td>
+        <td style="border: 1px black solid;">{{w.url}}</td>
+        <td style="border: 1px black solid;">
+            <img [src]="w.thumbnailUrl"/></td>
+            <!-- {{w.thumbnailUrl}}</td> -->
+    </tr>
+</table>
