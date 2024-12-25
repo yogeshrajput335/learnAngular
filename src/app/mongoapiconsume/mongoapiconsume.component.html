@@ -1,0 +1,8 @@
+
+<button (click)="GetData()">Get Data</button>
+<table>
+    <tr *ngFor="let w of WebData">
+        <td style="border: 1px black solid;">{{w.name}}</td>
+        <td style="border: 1px black solid;">{{w.age}}</td>
+    </tr>
+</table>
