@@ -19,11 +19,13 @@ export class MongoConnectService {
   }
 
   deleteUser(id:any){
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type':  'application/json'
-      })
-    };
-    return this.httpClient.delete("http://localhost:3000/api/delete/"+id,httpOptions);
+    const headers = new HttpHeaders();
+    headers.set('Content-Type', 'application/json; charset=utf-8');
+    return this.httpClient.delete("http://localhost:3000/api/delete/"+id,{headers: headers});
+  }
+  updateUser(user:any,id:any){
+    const headers = new HttpHeaders();
+    headers.set('Content-Type', 'application/json; charset=utf-8');
+    return this.httpClient.patch("http://localhost:3000/api/update/"+id,user,{headers: headers})
   }
 }
