@@ -1,8 +1,23 @@
 
 <button (click)="GetData()">Get Data</button>
+<div>
+    <table>
+        <tr>
+            <td>Name</td><td><input type="text" [(ngModel)]="user.name"/></td>
+        </tr>
+        <tr>
+            <td>Age</td><td><input type="text" [(ngModel)]="user.age"/></td>
+        </tr>
+        <tr>
+            <td> <button (click)="SaveUser()">Save</button></td>
+        </tr>
+    </table>
+</div>
 <table>
     <tr *ngFor="let w of WebData">
+        <td style="border: 1px black solid;">{{w._id}}</td>
         <td style="border: 1px black solid;">{{w.name}}</td>
         <td style="border: 1px black solid;">{{w.age}}</td>
+        <td><button (click)="deleteUser(w._id)">Delete</button></td>
     </tr>
 </table>

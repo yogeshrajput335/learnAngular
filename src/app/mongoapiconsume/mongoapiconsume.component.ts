@@ -3,18 +3,36 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { MongoConnectService } from '../services/mongo-connect.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-mongoapiconsume',
-  imports: [HttpClientModule,CommonModule ],
+  imports: [CommonModule,FormsModule ],
   templateUrl: './mongoapiconsume.component.html',
-  styleUrl: './mongoapiconsume.component.css',
-  providers:[HttpClient]
+  styleUrl: './mongoapiconsume.component.css'
 })
 export class MongoapiconsumeComponent {
-  constructor(private httpClient : HttpClient){}
+  // name=""
+  // age=0
+  user={name:'',age:0}
+  constructor(private  mongoService: MongoConnectService){}
   WebData:any;
   GetData(){
-    this.httpClient.get("http://localhost:3000/api/getAll").subscribe(d=>this.WebData=d);
+    this.mongoService.getAll().subscribe(d=>this.WebData=d);
+  }
+  SaveUser(){
+    this.mongoService.addUser({'name':this.user.name,'age':this.user.age}).subscribe(d=> 
+      {
+        alert('User added')
+        this.GetData();
+      });
+  }
+  deleteUser(id:any){
+    this.mongoService.deleteUser(id).subscribe(d=> 
+      {
+        alert(d)
+        //this.GetData();
+      });
   }
 }

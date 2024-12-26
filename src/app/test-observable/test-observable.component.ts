@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
 import { interval, of } from 'rxjs';
+import { MongoConnectService } from '../services/mongo-connect.service';
 
 @Component({
   selector: 'app-test-observable',
   imports: [],
   templateUrl: './test-observable.component.html',
-  styleUrl: './test-observable.component.css'
+  styleUrl: './test-observable.component.css',
 })
 export class TestObservableComponent {
+  constructor(private  mongoService: MongoConnectService){
+    
+  }
    observable = interval(3000);
    user1:any
    user2:any
