@@ -9,7 +9,7 @@ import { MongoConnectService } from '../services/mongo-connect.service';
   styleUrl: './test-observable.component.css',
 })
 export class TestObservableComponent {
-  constructor(private  mongoService: MongoConnectService){
+  constructor(){
     
   }
    observable = interval(3000);

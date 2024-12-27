@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MongoapiconsumeComponent } from './mongoapiconsume.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('MongoapiconsumeComponent', () => {
   let component: MongoapiconsumeComponent;
@@ -8,7 +9,7 @@ describe('MongoapiconsumeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MongoapiconsumeComponent]
+      imports: [MongoapiconsumeComponent,HttpClientModule]
     })
     .compileComponents();
 
