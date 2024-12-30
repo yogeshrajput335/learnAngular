@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { MongoConnectService } from '../Services/mongodb-connect-services-new.service';
 import { HttpClient, HttpClientJsonpModule } from '@angular/common/http';
 
+
 @Component({
   selector: 'app-mongodbapiconsume.component',
   imports: [CommonModule, FormsModule],
@@ -12,8 +13,8 @@ import { HttpClient, HttpClientJsonpModule } from '@angular/common/http';
 })
 export class MongodbapiconsumeComponentComponent {
 
-  // name=""
-  // age=0
+  // name = ""
+  // age = 0
   user = { _id: '', name: '', age: 0 }
   constructor(private mongoService: MongoConnectService) { }
   WebData: any;
